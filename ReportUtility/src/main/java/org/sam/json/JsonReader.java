@@ -16,16 +16,16 @@ public class JsonReader {
 
 	public static void main(String[] args) throws MalformedURLException, JSONException, IOException {
 		// TODO Auto-generated method stub
-		JSONObject jo = (JSONObject) new JSONTokener(IOUtils.toString(new URL("http://10.240.20.141:8080/api/json?pretty=true"))).nextValue();
-		
-		int len=jo.getJSONArray("jobs").length();
+		//JSONObject jo = (JSONObject) new JSONTokener(IOUtils.toString(new URL("http://10.240.20.141:8080/api/json?pretty=true"))).nextValue();
+		JSONObject jo = (JSONObject) new JSONTokener(IOUtils.toString(new URL("http://vstfs2015test:8080/tfs/TFS2015_Sandpit/Radiology/_apis/build/definitions?api-version=2.0"))).nextValue();
+		int len=jo.getJSONArray("value").length();
 		
 	/*	for(int i=0;i<=len-1;i++){
 			System.out.println(jo.getJSONArray("jobs").get(i));
 		}
 		*/
 		
-		JSONArray jsonArray = jo.getJSONArray("jobs");
+		JSONArray jsonArray = jo.getJSONArray("value");
 		
 
 		for(int i=0;i<=len-1;i++){
