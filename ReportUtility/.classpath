@@ -27,8 +27,9 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/mustfa/workspace/ReportUtility/lib/commons-io-2.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mustfa/workspace/ReportUtility/lib/dom4j-1.7-20060614.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mustfa/workspace/ReportUtility/lib/wffweb-1.0.0-20151115.104129-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mustfa/git/ReportUtil/ReportUtility/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mustfa/git/ReportUtil/ReportUtility/lib/dom4j-1.7-20060614.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mustfa/git/ReportUtil/ReportUtility/lib/wffweb-1.0.0-20151115.104129-2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mustfa/Downloads/java-json.jar/java-json.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
