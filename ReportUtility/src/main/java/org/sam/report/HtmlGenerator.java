@@ -44,15 +44,13 @@ package org.sam.report;
 	        						
 	        						Td rowData1 = new Td(this, null) {
 	        	                    H5 h1 = new H5(this) {
-	        	                        Blank headerContent = new Blank(this,
-	        	                        		"Job Name");
+	        	                        Blank headerContent = new Blank(this,"Job Name");
 	        	                    };
 	        					};
 	        	                    
 	        					Td rowData2 = new Td(this, null) {
 	        	                    H5 h2 = new H5(this) {
-	        	                        Blank headerContent = new Blank(this,
-	        	                        		"Status");
+	        	                        Blank headerContent = new Blank(this,"Status");
 	        	                    };
 	        					};
 	        						
@@ -62,12 +60,11 @@ package org.sam.report;
 	            					Tr row = new Tr(table, null) {
 	            						
 	            						Td rowData1 = new Td(this, null) {
-	            							Blank name = new Blank(this,
-	            									data.getName());
+	            							
+	            							Blank name = new Blank(this,data.getName());
 	            					};
 	            					Td rowData2 = new Td(this, null) {
-	            						Blank status = new Blank(this,
-	            								data.getStatus());
+	            						Blank status = new Blank(this,data.getStatus());
 	            						};
 	            					};
 	                        	}
