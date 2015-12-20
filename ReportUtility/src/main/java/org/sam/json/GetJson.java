@@ -1,4 +1,4 @@
-package org.sam.json;
+/*package org.sam.json;
 
 
 	import java.io.BufferedReader;
@@ -51,3 +51,4 @@ package org.sam.json;
 	}
 
 
+*/

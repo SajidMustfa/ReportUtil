@@ -24,7 +24,7 @@ public class Main {
         // every Hudson model object exposes the .../api/xml, but in this example
         // we'll just take the root object as an example
        // URL url = new URL("http://deadlock.netbeans.org/hudson/api/xml");
-    	URL url = new URL("http://10.240.20.141:8080/view/PowerPath/api/xml");
+    	URL url = new URL("http://localhost:8080/api/json?pretty=true");
     	 
     	// URL url = new URL("http://vstfs2015test:8080/tfs/TFS2015_Sandpit/BuildAutomation/_apis/build/definitions?api-version=2.0");
     	 //http://vstfs2015test:8080/tfs/TFS2015_Sandpit/BuildAutomation/_apis/build/definitions?api-version=2.0
