@@ -24,7 +24,7 @@ package org.sam.report;
 
 	public class HtmlGenerator {
 
-		public void generateReport(List<ReportData> reportDatas) {
+		public void generateReport(List<ReportData> reportDatas,String type) {
 			Html html = new Html(null) {
 
 				Head head = new Head(this);
@@ -76,12 +76,12 @@ package org.sam.report;
 			};
 			// prepends the doc type <!DOCTYPE html>
 			html.setPrependDocType(true);
-			createHtmlFile(html.toHtmlString());
+			createHtmlFile(html.toHtmlString(),type);
 			System.out.println(html.toHtmlString());
 		};
 		
-		private void createHtmlFile(String htmlString) {
-			File file = new File("report.html");
+		private void createHtmlFile(String htmlString,String type) {
+			File file = new File(type+"report.html");
 			try {
 				FileUtils.writeStringToFile(file, htmlString, false);
 			} catch (IOException e) {
